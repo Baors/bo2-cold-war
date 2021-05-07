@@ -14,11 +14,6 @@ init()
 	level.perk_purchase_limit = getDvarIntDefault("cmPlayerPerkLimit", 9);
 	level.cmPerkDoubleTapFireRate = getDvarFloatDefault("cmPerkDoubleTapFireRate", 0.5);
 	setdvar("perk_weapRateMultiplier", level.cmPerkDoubleTapFireRate);
-	
-	maps/mp/zombies/_zm_perks::perk_machine_removal("specialty_rof");
-	maps/mp/zombies/_zm_perks::perk_machine_removal("specialty_additionalprimaryweapon");
-	maps/mp/zombies/_zm_perks::perk_machine_removal("specialty_flakjacket");
-	maps/mp/zombies/_zm_perks::perk_machine_removal("specialty_nomotionsensor");
 
 	level._random_zombie_perk_cost = undefined;
 	level._challenges = undefined;
